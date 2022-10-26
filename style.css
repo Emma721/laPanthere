@@ -42,6 +42,7 @@ a:hover {
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
+    
 }
 
 .bloc-lg {
@@ -93,7 +94,7 @@ a:hover {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
-    opacity: 0.33;
+    opacity: 1;
 }
 
 .b-parallax {
@@ -134,7 +135,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgb(255, 255, 255);
 }
 
 .d-bloc .a-btn:hover,
@@ -749,6 +750,8 @@ li {
 
 .white {
     color: #FFFFFF!important;
+    margin-bottom: 20px;
+
 }
 
 .portfolio-thumb {
@@ -783,11 +786,12 @@ li {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #d3703b;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #ffdfd0!important;;
+    text-shadow: #000000;
 }
 
 .btn-atomic-tangerine {
