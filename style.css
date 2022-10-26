@@ -93,6 +93,7 @@ a:hover {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
+    opacity: 0.33;
 }
 
 .b-parallax {
@@ -677,7 +678,8 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .tight-width-whitespace {
@@ -707,12 +709,14 @@ p {
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    text-shadow: 0 0 black;
+    font-weight: 600;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 800;
     color: #333333!important;
 }
 
@@ -728,6 +732,14 @@ h1 {
 
 h4 {
     color: #333333!important;
+}
+#text{ 
+    font-size: 20px;
+    font-weight: 500;
+}
+li {
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .icons {
@@ -753,7 +765,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgb(72 67 52 / 70%);
     padding: 40px 40px 40px 40px;
 }
 
@@ -854,7 +866,7 @@ h4 {
     }
 }
 
-@media  screen and (min-device-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media  screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,22 +884,14 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding: 
-        env(safe-area-inset-left)
-        env(safe-area-inset-right);
-    }
+  
     .bloc-group,
     .bloc-group .bloc {
         display: block;
         width: 100%;
     }
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-        padding-left:(safe-area-inset-left);
-        padding-right:(safe-area-inset-right);
-    }
+    
+ 
 }
 
 @media (max-width: 767px) {
